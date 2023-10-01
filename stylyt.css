@@ -1,0 +1,70 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    background-color: whitesmoke;
+}
+#GOMH {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 300%;
+    letter-spacing: .3em;
+    background-image: url(https://th.bing.com/th/id/R.07df778becacbc34c9b243ad94a78f7a?rik=855ffztqF5Sl0Q&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fBlack-And-Red-Picture-Photo.jpg&ehk=cl%2fzVEh7NnhYQrpa%2bCduInzmAddZTaUn8jdmJuBtnHA%3d&risl=&pid=ImgRaw&r=0);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#GOMH::selection {
+    background-color: black;
+    color: red;
+}
+#H1 {
+    background-color: #a7e8bd;
+    height: 40%;
+    width: 100%;
+    border-radius: 4px;
+}
+#NAVBAR {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #ffd972;
+    height: 100%;
+    border-radius: 4px;
+    border-bottom: 2px solid darkslategray;
+    border-top: 2px solid darkslategray;
+}
+#INSTAGRAM,#FACEBOOK,#SNAPCHAT {
+    background-color: transparent;
+    margin-right: 1.5%;
+}
+#INSTAGRAM,#FACEBOOK,#SNAPCHAT::selection {
+    background-color: black;
+    color: red;
+}
+i {
+    background-color: transparent;
+    font-size: 70%;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70%;
+}
+#YTV {
+    font-weight: 900;
+    font-family: 'Teko', sans-serif;
+    font-family: 'Teko', sans-serif;
+    margin-left: 4%;
+}
+#YTV:hover {
+    color: darkslategray;
+    background-color: transparent;
+    filter: drop-shadow(2px 2px 0px darksalmon);
+}
+#YTV::selection {
+    background-color: black;
+    color: red;
+}
