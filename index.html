@@ -17,38 +17,48 @@
         * {
     padding: 0%;
     margin: 0%;
-    background-color: whitesmoke;
+    background-color: yellowgreen;
+}
+#LOGO {
+    padding: 0%;
+    margin: 0%;
+    height: 20%;
+    width: 20%;
 }
 #GOMH {
-    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    text-align: left;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 300%;
-    letter-spacing: .3em;
+    line-height: 90%;
     background-image: url(https://th.bing.com/th/id/R.07df778becacbc34c9b243ad94a78f7a?rik=855ffztqF5Sl0Q&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fBlack-And-Red-Picture-Photo.jpg&ehk=cl%2fzVEh7NnhYQrpa%2bCduInzmAddZTaUn8jdmJuBtnHA%3d&risl=&pid=ImgRaw&r=0);
     background-size: contain;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    position: relative;
 }
 #GOMH::selection {
     background-color: black;
     color: red;
 }
 #H1 {
-    background-color: #a7e8bd;
-    height: 40%;
-    width: 100%;
-    border-radius: 4px;
+    position: absolute;
+    top: 2vh;
+    left: 18vw;
+    margin: 0%;
+    padding: 1%;
 }
 #NAVBAR {
+    margin: 1%;
+    margin-left: 3%;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
-    background-color: #ffd972;
+    background-color: transparent;
     height: 100%;
     border-radius: 4px;
-    border-bottom: 2px solid darkslategray;
-    border-top: 2px solid darkslategray;
 }
 #INSTAGRAM,#FACEBOOK,#SNAPCHAT {
     background-color: transparent;
@@ -63,26 +73,33 @@ a {
     background-color: transparent;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 70%;
+    color: black;
 }
-#YTV {
-    font-weight: 900;
+button {
+    background-color: red;
+    padding: 2%;
+    margin: 2%;
+    height: 10%;
+    width: 20%;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    transition: all .73s ease;
     font-family: 'Teko', sans-serif;
     font-family: 'Teko', sans-serif;
-    margin-left: 4%;
-}
-#YTV:hover {
-    color: darkslategray;
-    background-color: transparent;
-    filter: drop-shadow(2px 2px 0px darksalmon);
-}
-#YTV::selection {
-    background-color: black;
-    color: red;
+    font-weight: 700;
+    font-size: 137%;
+    text-align: center;
 }
     </style>
+    
 </head>
 <body>
-    <div id="H1"><h1 id="GOMH">GONDAL OFFICIAL</h1></div>
+    <img id="LOGO" src="/GONDAL_OFFICIAL-removebg-preview.png" alt="logo">
+    <div id="H1"><h1 id="GOMH">GONDAL<br>OFFICIAL</h1></div>
     <div id="NAVBAR">
         <div id="INSTAGRAM">
             <i class="fa-brands fa-instagram fa-shake" style="color: #ff0000;"></i>
@@ -93,10 +110,9 @@ a {
             <a href="" target=".main">FACEBOOK</a>
         </div>
         <div id="SNAPCHAT">
-            <i class="fa-brands fa-snapchat fa-shake" style="color: #ffff00;"></i>
+            <i class="fa-brands fa-snapchat fa-shake" style="color: #8B8000;"></i>
             <a href="https://accounts.snapchat.com/accounts/welcome" target=".main">SNAPCHAT</a>
         </div>
     </div>
-    <h1 id="YTV">YT VIDEOS!</h1>
 </body>
 </html>
