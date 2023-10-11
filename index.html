@@ -14,6 +14,10 @@
       </style>
     <!-- STYLE -->
     <style>
+@font-face {
+    font-family: JOIN;
+    src: url(./The_Nautigal.zip);
+}
 * {
     padding: 0%;
     margin: 0%;
@@ -25,6 +29,13 @@ body {
     background-repeat: repeat;
     background-position: center;
 
+}
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(salmon,lightblue,yellow,lightgreen);
+    border-radius: 20px;
 }
 #LOGO {
     padding: 0%;
@@ -101,17 +112,98 @@ a {
     color: transparent;
     background-color: aliceblue;
     animation: LINKS 1.5s ease-out .2s 1 none;
-
+    color: darkslategray;
 }
 @keyframes LINKS {
     0% {background-image: url(./black.JPG);}
     100% {background-image: url(./white.JPG);}
 }
+#FG {
+    background: linear-gradient(to right,#1a1b24,#1a1b24,#1a1b24,transparent);
+    height: fit-content;
+    width: 300px;
+    border-radius: 10px;
+}
+#TUTORIALS {
+    margin: 0%;
+    padding: 0%;
+    padding-left: 2%;
+    height: fit-content;
+    width: fit-content;
+}
+#TUTORIALS h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: 'Abril Fatface', serif; */
+    /* font-family: 'The Nautigal', cursive; */
+    /* font-family: JOIN; */
+    color: antiquewhite;
+    -webkit-text-stroke: 2px red;
+    font-size: 366%;
+    letter-spacing: 4px;
+    transition: all ease-in .37s;
+}
+#TUTORIALS:hover h1 {
+    color: red;
+    -webkit-text-stroke: 2px whitesmoke;
+    filter: drop-shadow(1px 1px .7px yellow) 
+}
+h1::selection {
+    background-color: black;
+    color: #ff0000;
+}
+#IF {
+    /* border: 2px dashed red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 20px;
+    background-color: transparent;
+    width: 97vw;
+    height: fit-content;
+
+}
+#IF1,#IF2,#IF3,#IF4,#IF5,#IF6,#IF7,#IF8,#IF9,#IF10,#IF11,#IF12 {
+    background: linear-gradient(salmon,lightblue,yellow,lightgreen);
+    margin: .7%;
+    padding: 0%;
+    border-radius: 7px;
+    animation: VIDAMS 1.5s ease-out .2s 1 none;
+}
+@keyframes VIDAMS {
+    0% {opacity: 0;}
+    100% {opacity: 1}
+}
+@media (min-width: 350px) and (max-width: 450px) {
+    iframe {
+        height: 105;
+        width: 156.67;
+    } 
+    /* #IF {
+        border: 2px double red;
+    } */
+    #IF1,#IF2,#IF3,#IF4,#IF5,#IF6,#IF7,#IF8,#IF9,#IF10,#IF11,#IF12 {
+    margin: .3%;
+}
+}
+@media (orientation: landscape) {
+    iframe {
+        height: 105;
+        width: 156.67;
+    } 
+    /* #IF {
+        border: 2px double red;
+    } */
+    #IF1,#IF2,#IF3,#IF4,#IF5,#IF6,#IF7,#IF8,#IF9,#IF10,#IF11,#IF12 {
+    margin: .3%;
+}
+}
+
     </style>
     
 </head>
 <body>
-    <div id="BODY">
+    <div id="FG">
     <img id="LOGO" src="./GONDALOFFICIAL.PNG" alt="logo">
     <div id="H1"><h1 id="GOMH">GONDAL<br>OFFICIAL</h1></div>
     <div id="NAVBAR">
@@ -127,5 +219,48 @@ a {
             <i class="fa-brands fa-snapchat fa-shake" style="color: #8B8000;"></i>
             <a href="https://accounts.snapchat.com/accounts/welcome" target=".main">SNAPCHAT</a>
         </div>
+        </div>
+        <div id="TUTORIALS">
+            <h1>TUTORIALS</h1>
+        </div>
+    <div id="IF">
+        <div id="IF1">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/NsVRGMjbTiI?si=O7otqGSaKoarUshA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF2">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/qxmyeEdupPg?si=YjJ0FzxrbkayBHKV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF3">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/tLTRFae4vBU?si=yYSlzzHgmmCgyQDZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF4">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/E1kxd4FzGxs?si=K4QMkppztbuUZyDR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF5">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/9ff87MWCjPI?si=0cdum97VIP-V5593" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF6">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/Bbxcswx28Y0?si=NqxNLupnJKjfxEVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF7">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/XYcbdmdWkmM?si=Dm5fmRtga62YlnQR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF8">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/pLknRAu5Yik?si=XRJkPJh6YX7gDxaK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF9">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/QPp2ooB2ibQ?si=OPVk284gabZ3GWh-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF10">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/-nJsPCBE53A?si=p0eFo6p_b-K8MlNT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF11">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/iZpP7CmTxHg?si=1sfCLjaM899OgEQT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="IF12">
+            <iframe width="208.89" height="140" src="https://www.youtube.com/embed/vdTlNRiro84?si=8gYsDC-Zd1-a83PT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+     
 </body>
 </html>
