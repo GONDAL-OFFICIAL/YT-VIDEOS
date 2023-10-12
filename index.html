@@ -9,10 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
-      </style>
-    <!-- STYLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <style>
 @font-face {
     font-family: JOIN;
@@ -50,12 +62,20 @@ body::-webkit-scrollbar-thumb {
     40% {rotate: -30deg;}
     100% {rotate: 360deg;}
 }
+#LOGO:hover {
+    animation: LOGO 1s linear .2s infinite none;
+}
 #GOMH {
     margin: 0%;
     padding: 0%;
     text-align: left;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Autour One'; */
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: bold;
     font-size: 300%;
+    letter-spacing: 10px;
     line-height: 45px;
     background-image: url(./RWBG.JPG);
     background-size: contain;
@@ -69,6 +89,13 @@ body::-webkit-scrollbar-thumb {
     0% {background-image: url(./red.JPG);}
     20% {background-image: url(./white.JPG);}
     100% {background-image: url(./RWBG.JPG);}
+}
+#GOMH:hover {
+    animation: FUNNH1 .7s ease-in-out .2s infinite none;
+}
+@keyframes FUNNH1 {
+    0% {background-image: url(./red.JPG);}
+    100% {background-image: url(./white.JPG);}
 }
 #GOMH::selection {
     background-color: black;
@@ -101,7 +128,7 @@ i {
     background-color: transparent;
     font-size: 70%;
 }
-a {
+#A1,#A2,#A3 {
     text-decoration: none;
     background-color: transparent;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -112,7 +139,7 @@ a {
     color: transparent;
     background-color: aliceblue;
     animation: LINKS 1.5s ease-out .2s 1 none;
-    color: darkslategray;
+
 }
 @keyframes LINKS {
     0% {background-image: url(./black.JPG);}
@@ -132,10 +159,12 @@ a {
     width: fit-content;
 }
 #TUTORIALS h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     /* font-family: 'Abril Fatface', serif; */
     /* font-family: 'The Nautigal', cursive; */
     /* font-family: JOIN; */
+    /* font-family: 'Londrina Solid', sans-serif; */
+    font-family: 'Luckiest Guy', cursive;
     color: antiquewhite;
     -webkit-text-stroke: 2px red;
     font-size: 366%;
@@ -178,46 +207,52 @@ h1::selection {
     iframe {
         height: 105;
         width: 156.67;
-    } 
+  } 
     /* #IF {
         border: 2px double red;
     } */
     #IF1,#IF2,#IF3,#IF4,#IF5,#IF6,#IF7,#IF8,#IF9,#IF10,#IF11,#IF12 {
     margin: .3%;
-}
+  }
+    #GOMH {
+    letter-spacing: 6px;
+  }
 }
 @media (orientation: landscape) {
     iframe {
         height: 105;
         width: 156.67;
-    } 
+  } 
     /* #IF {
         border: 2px double red;
     } */
     #IF1,#IF2,#IF3,#IF4,#IF5,#IF6,#IF7,#IF8,#IF9,#IF10,#IF11,#IF12 {
     margin: .3%;
-}
+  }
+  #GOMH {
+    letter-spacing: 9px;
+  }
 }
 
     </style>
     
 </head>
 <body>
-    <div id="FG">
+    <!-- <div id="FG"> -->
     <img id="LOGO" src="./GONDALOFFICIAL.PNG" alt="logo">
     <div id="H1"><h1 id="GOMH">GONDAL<br>OFFICIAL</h1></div>
     <div id="NAVBAR">
         <div id="INSTAGRAM">
             <i class="fa-brands fa-instagram fa-shake" style="color: #ff0000;"></i>
-            <a href="https://www.instagram.com/ali_gondal_307/" target=".main">INSTAGRAM</a>
+            <a id="A1" href="https://www.instagram.com/ali_gondal_307/" target=".main">INSTAGRAM</a>
         </div>
         <div id="FACEBOOK">
             <i class="fa-brands fa-facebook fa-shake" style="color: #0000ff;"></i>
-            <a href="" target=".main">FACEBOOK</a>
+            <a id="A2" href="" target=".main">FACEBOOK</a>
         </div>
         <div id="SNAPCHAT">
             <i class="fa-brands fa-snapchat fa-shake" style="color: #8B8000;"></i>
-            <a href="https://accounts.snapchat.com/accounts/welcome" target=".main">SNAPCHAT</a>
+            <a id="A3" href="https://accounts.snapchat.com/accounts/welcome" target=".main">SNAPCHAT</a>
         </div>
         </div>
         <div id="TUTORIALS">
