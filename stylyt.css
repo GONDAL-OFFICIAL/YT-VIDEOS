@@ -226,6 +226,45 @@ i {
     border-radius: 10px;
 }
 
+#TUTORIALSh1::before,#GENASSh1::before,#GENINFOh1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    -webkit-text-stroke: 2px red; 
+    border-right: 6px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    animation: FILLIT 1.7s ease-out 0s 1 none;
+    
+}
+
+#TUTORIALSh1:hover,
+#GENASSh1:hover,
+#GENINFOh1:hover {
+    animation: FILLIT 1.7s ease-out 0s infinite none;
+}
+
+@keyframes FILLIT {
+    0% {
+        width: 0%;
+        border-right: 6px solid darkorange;
+    }
+
+    90% {
+        border-right: 6px solid darkorange;
+    }
+
+    100% {
+        width: 100%;
+        border-right: 6px solid transparent;
+    }
+    
+}
+
 #TUTORIALS,
 #GENINFO,
 #GENASS {
@@ -245,11 +284,13 @@ i {
     /* font-family: JOIN; */
     /* font-family: 'Londrina Solid', sans-serif; */
     font-family: 'Luckiest Guy', cursive;
-    color: antiquewhite;
-    -webkit-text-stroke: 2px red;
+    /* color: antiquewhite; */
+    color: #1a1b24;
+    -webkit-text-stroke: 2px lightslategray;
     font-size: 55px;
     letter-spacing: 4px;
     transition: all ease-in .37s;
+    position: relative;
 }
 
 #TUTORIALS:hover h1 {
