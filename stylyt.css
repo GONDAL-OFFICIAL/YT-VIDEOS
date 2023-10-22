@@ -200,6 +200,35 @@ i {
     /* animation: LINKS 1.5s ease-out 0s 1 none; */
 
 }
+#A1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url(https://th.bing.com/th/id/OIP.60O2l_5CXt8LWg7ZRI3MnwHaHa?w=174&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+    background-size: contain;
+    font-family: 'Tilt Neon', sans-serif;
+    font-style: bold;
+}
+
+#A2 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url(https://th.bing.com/th/id/OIP.X-VxBe2rsqEYV8pKYboAlAHaEK?w=305&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+    background-size: contain;
+    font-family: 'Tilt Neon', sans-serif;
+    font-style: bold;
+}
+
+#A3 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url(https://th.bing.com/th/id/R.a32d55e07a10f53af6bf79cee8817143?rik=wUwMqlATHWFPoQ&riu=http%3a%2f%2fwww.brandgradients.com%2fimg%2fbackgrounds%2fsnapchat-hex-colors-gradient-background.png&ehk=j9poTvG85yYpTlHHHjzQR2Jlsv86LC1IZn8ympfHb2E%3d&risl=&pid=ImgRaw&r=0);
+    background-size: contain;
+    font-family: 'Tilt Neon', sans-serif;
+    font-style: bold;
+}
 
 @keyframes LINKS {
     /* 0% {
@@ -476,7 +505,7 @@ h1::selection {
     #INSTAGRAM,
     #FACEBOOK,
     #SNAPCHAT {
-        margin-right: 2.6%;
+        margin-right: 24px;
     }
 
     #NAVBAR {
