@@ -178,6 +178,8 @@ body::-webkit-scrollbar-thumb {
     margin: 0%;
     margin-right: 3.3%;
     animation: LINKS 1.5s ease-out 0s 1 none;
+    font-family: 'Tilt Neon', sans-serif;
+    font-style: bold;
 }
 
 i {
@@ -190,7 +192,9 @@ i {
 #A3 {
     text-decoration: none;
     background-color: transparent;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Tilt Neon', sans-serif;
+    font-style: bold;
     font-size: 77%;
     color: whitesmoke;
     background-clip: text;
@@ -198,8 +202,20 @@ i {
     color: transparent;
     background-color: aliceblue;
     /* animation: LINKS 1.5s ease-out 0s 1 none; */
-
 }
+
+#INSTAGRAM:hover a {
+    transform: translateY(-20px);
+}
+
+#FACEBOOK:hover a {
+    transform: translateY(-20px);
+}
+
+#SNAPCHAT:hover a {
+    transform: translateY(-20px);
+}
+
 #A1 {
     background-clip: text;
     -webkit-background-clip: text;
