@@ -385,7 +385,7 @@ i:active {
 
 
 
-@media (min-width: 350px) and (max-width: 450px) {
+@media (min-width: 0px) and (max-width: 480px) {
     #NAVBAR {
         display: none;
     }
