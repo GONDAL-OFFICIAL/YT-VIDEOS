@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKH FARMS</title>
+    <!-- STYING BY CSS -->
+    <link rel="stylesheet" href="./formstyle.css">
+    <!-- ADVANCING BY JS -->
+    <script src="./form.js"></script>
+    <!-- KENIA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="BOX">
+        <div id="HEADCONT">
+            <div id="HEADM">
+                <span id="LE1">M</span>
+                <span id="LE2">A</span>
+                <span id="LE3">K</span>
+                <span id="LE4">H</span>
+            </div>
+            <br>
+            <div id="HEADM">
+                <span id="LE1">F</span>
+                <span id="LE2">A</span>
+                <span id="LE3">R</span>
+                <span id="LE4">M</span>
+        </div>
+    </div>
+        <div id="CONTAINER">
+            <form method="post" action="" name="submit-to-google-sheet">
+                <div class="FORM">
+                    <input type="text" name="GOAT ID" required>
+                    <div class="LABELLINE">GOAT ID</div>
+                </div>
+                <div class="FORM">
+                    <input type="number" name="OFFSPRINGS" required>
+                    <div class="LABELLINE">OFFSPRINGS</div>
+                </div>
+                <div class="FORM">
+                    <input type="number" name="PUNCH NO." required>
+                    <div class="LABELLINE">PUNCH NO.</div>
+                </div>
+                <div class="FORM">
+                    <input style="color: transparent;" type="datetime-local" name="BIRTH" required>
+                    <div class="LABELLINE">BIRTH</div>
+                </div>
+                <div class="FORM">
+                    <input type="number" name="WEIGHT" required>
+                    <div class="LABELLINE">WEIGHT (lb)</div>
+                </div>
+                <div class="FORM">
+                    <input type="number" name="VACCINATION" required>
+                    <div class="LABELLINE">VACCINATION (YEAR)</div>
+                </div>
+                <div class="FORM">
+                    <input style="color: transparent;" type="datetime-local" name="DILIVERY DATE" required>
+                    <div class="LABELLINE">DILIVERY DATE</div>
+                </div>
+                <div class="FORM">
+                    <input style="color: transparent;" type="file" name="GOAT PIC" required>
+                    <div style="padding-left: 171px;" class="LABELLINE">GOAT PIC</div>
+                </div>
+                <div class="FORM">
+                    <input
+                        style="margin-top: 30px; color: whitesmoke; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-transform: uppercase; font-size: 20px;  text-shadow: 0 0 12px lime, 0 0 50px #1da1f2, 0 0 100px lime;"
+                        type="submit" value="submit" name="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
