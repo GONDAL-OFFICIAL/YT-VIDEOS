@@ -139,7 +139,7 @@ border: 8px solid #25252b;
     margin-top: 10px;
 }
 input {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     outline: none;
     font-size: .7em;
@@ -150,9 +150,14 @@ input {
     background: transparent;
     transition: .1s ease;
     z-index: 7;
+    /* EXTRA */
+    height: 37px;
+    line-height: 37px;
+    /* z-index: 3; */
+    margin-top: 10px;
 }
 .LABELLINE {
-    position: absolute;
+    /* position: absolute; */
     font-size: 1.2em;
     color: #f0ffff;
     padding: 0 7px;
@@ -161,6 +166,12 @@ input {
     transition: 0.2s ease;
     border-radius: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* EXTRA */
+    height: min-content;
+    width: max-content;
+    line-height: 37px;
+    z-index: 3;
+    margin-top: -37px;
 }
 input:focus,
 input:valid {
