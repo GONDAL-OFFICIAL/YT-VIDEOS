@@ -111,12 +111,15 @@ body {
 
 #NAVBARM {
     display: none;
-    height: 100vh;
+    height: max-content;
+    position: absolute;
+    bottom: 7px;
     width: 100vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     row-gap: 37px;
+    z-index: 0;
     /* padding-bottom: 60px; */
 }
 #MA {
@@ -198,6 +201,7 @@ body {
     align-items: center;
     position: absolute;
     left: 73px;
+    z-index: 3;
 }
 #SMLPC:focus,
 #WRAPPER:focus,
