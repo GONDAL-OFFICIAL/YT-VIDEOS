@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+    <!-- SHADOWS TO LIGHT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
     <div style="resize: both;" id="BOX">
@@ -45,7 +49,7 @@
                     <div class="LABELLINE">PUNCH-NO.</div>
                 </div>
                 <div class="FORM">
-                    <input style="color: transparent;" type="date" name="BIRTH" required>
+                    <input type="date" name="BIRTH" class="DATE" required>
                     <div class="LABELLINE">BIRTH</div>
                 </div>
                 <div class="FORM">
@@ -57,11 +61,11 @@
                     <div class="LABELLINE">VACCINATION (YEAR)</div>
                 </div>
                 <div class="FORM">
-                    <input style="color: transparent;" type="date" name="DILIVERY-DATE" required>
+                    <input type="date" name="DILIVERY-DATE" class="DATE" required>
                     <div class="LABELLINE">DILIVERY-DATE</div>
                 </div>
                 <div class="FORM">
-                    <input style="color: transparent;" type="file" name="GOAT-PIC" required>
+                    <input type="file" name="GOAT-PIC" class="DATE" required>
                     <div style="padding-left: 171px;" class="LABELLINE">GOAT PIC</div>
                 </div>
                 <div class="FORM">
@@ -85,15 +89,33 @@
                     .catch(error => console.error('Error!', error.message))
             })
     </script> -->
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwyDMB6GStUln-bdaE4jidAkPJzXeHUkPNZod2CP5aUIDPtniUibwQ-cRq9WneQ4ZIx/exec'
-        const form = document.forms['submit-to-google-sheet']
 
+    <!-- ********* -->
+
+    <script>
+        // const scriptURL = 'https://script.google.com/macros/s/AKfycbwyDMB6GStUln-bdaE4jidAkPJzXeHUkPNZod2CP5aUIDPtniUibwQ-cRq9WneQ4ZIx/exec'
+        // const form = document.forms['submit-to-google-sheet']
+
+        // form.addEventListener('submit', e => {
+        //     e.preventDefault()
+        //     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        //         .then(response => console.log('Success!', response))
+        //         .catch(error => console.error('Error!', error.message))
+        // }) -->
+
+        // <!-- ********* -->
+
+        const scriptURL =
+        'https://script.google.com/macros/s/AKfycbwyDMB6GStUln-bdaE4jidAkPJzXeHUkPNZod2CP5aUIDPtniUibwQ-cRq9WneQ4ZIx/exec'
+        
+        const form = document.forms['submit-to-google-sheet']
+        
         form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("DAGAR DATA ENTRY SUCCUSSFULL."))
+        .then(() => { window.location.reload(); })
+        .catch(error => console.error('Error!', error.message))
         })
     </script>
 </body>

@@ -142,7 +142,7 @@ input {
     /* position: absolute; */
     width: 100%;
     outline: none;
-    font-size: .7em;
+    font-size: 1.3em;
     padding: 0 37px;
     line-height: 37px;
     border-radius: 10px;
@@ -151,10 +151,11 @@ input {
     transition: .1s ease;
     z-index: 7;
     /* EXTRA */
-    height: 37px;
+    height: 39px;
     line-height: 37px;
     /* z-index: 3; */
     margin-top: 10px;
+    font-family: 'Shadows Into Light', cursive;
 }
 .LABELLINE {
     /* position: absolute; */
@@ -171,7 +172,7 @@ input {
     width: max-content;
     line-height: 37px;
     z-index: 3;
-    margin-top: -37px;
+    margin-top: -39px;
 }
 input:focus,
 input:valid {
@@ -187,6 +188,49 @@ input:valid + .LABELLINE {
     transform: translate(-15px, -16px) scale(0.88);
     z-index: 7;
 }
+
+/* EXCLUSIVE */
+.DATE {
+    color: transparent;
+    font-size: 1.3em;
+    height: 39px;
+    font-family: 'Shadows Into Light', cursive;
+    /* OTHER */
+    /* position: absolute; */
+    width: 100%;
+    outline: none;
+    font-size: 1.3em;
+    padding: 0 37px;
+    line-height: 37px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    background: transparent;
+    transition: .1s ease;
+    z-index: 7;
+    /* EXTRA */
+    height: 39px;
+    line-height: 37px;
+    /* z-index: 3; */
+    margin-top: 10px;
+    font-family: 'Shadows Into Light', cursive;
+}
+.DATE:focus,
+.DATE:valid {
+    background: whitesmoke;
+    color: #111;
+    border: 4px solid #66ff00;
+}
+
+.DATE:focus+.LABELLINE,
+.DATE:valid+.LABELLINE {
+    color: #66ff00;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 7;
+}
+
 #CONTAINER {
     animation: INCOME .75s ease-in-out 0s 1;
 }
