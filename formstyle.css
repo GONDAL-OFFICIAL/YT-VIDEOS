@@ -176,7 +176,7 @@ input {
 }
 input:focus,
 input:valid {
-    color: whitesmoke;
+    background: whitesmoke;
     border: 4px solid #66ff00; 
 }
 input:focus + .LABELLINE, 
