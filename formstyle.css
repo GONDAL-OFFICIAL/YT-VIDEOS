@@ -20,6 +20,7 @@ body {
     position: absolute;
     top: 37px;
     z-index: 7;
+    transform: translateY(-3px);
 }
 
 #LE1,
@@ -84,7 +85,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
     width: 430px;
@@ -132,6 +133,11 @@ border: 8px solid #25252b;
     z-index: 3;
     height: 600px;
     margin-top: 73px;
+    animation: INCOME .75s ease-in-out .35s 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
 }
 #CONTAINER::-webkit-scrollbar {
     background-color: transparent;
@@ -166,6 +172,10 @@ input {
     /* z-index: 3; */
     margin-top: 10px;
     font-family: 'Shadows Into Light', cursive;
+    transition: all .037s ease-in-out;
+}
+input:hover {
+    border: 3px solid limegreen;
 }
 .LABELLINE {
     /* position: absolute; */
@@ -246,7 +256,8 @@ input:valid + .LABELLINE {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
+    transform: translateY(19px);
 }
 
 #GENDER #GI {
@@ -350,21 +361,94 @@ input:valid + .LABELLINE {
     padding: 0;
     margin: 0;
 }
-#CONTAINER {
-    animation: INCOME .75s ease-in-out 0s 1;
-    display: flex;
+/* INPUT TYPE SUBMIT */
+#SUBMIT {
+background: transparent;
+margin-top: 25px;
+height: 40px;
+border: 3px solid darkgray;
+color: whitesmoke;
+font-family: Impact,
+Haettenschweiler,
+'Arial Narrow Bold',
+sans-serif;
+text-transform: uppercase;
+font-size: 23px;
+letter-spacing: 2px;
+box-shadow: 0 0 6px lime, 0 0 2.5px #1da1f2, 0 0 1px lime;
+transition: all .3s ease-in-out;
+scale: .97;
+}
+#SUBMIT:hover {
+    text-shadow: 0 0 12px lime, 0 0 50px #1da1f2, 0 0 100px lime;
+    border: 4px solid lime;
+    transform: translateY(-7px);
+}
+#SUBMIT:active {
+    text-shadow: 0 0 12px lime, 0 0 50px #1da1f2, 0 0 100px lime;
+    border: 4px solid lime;
+    scale: .9;
+}
+/* INPUT TYPE COLOR */
+#CONCOLOR {
+    margin-top: 7px;
+    padding: 0px;
+    display: inline-flex;
+    height: 55px;
+    width: 330px;
     align-items: center;
     justify-content: center;
-    overflow-y: auto;
+    flex-direction: column;
+    gap: 3px;
+}
+#COLOR {
+    font-weight: bolder;
+    z-index: 90;
+}
+#STYLE {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+#STYLE:hover {
+    transform: translateY(7px);
+    box-shadow: 0 0 8px lime, 0 0 4.5px #1da1f2, 0 0 3px lime;
+    
+}
+#STYLE::-webkit-color-swatch {
+    border-radius: 10px;
+    border: none;
+}
+#STYLE::-moz-color-swatch {
+    border-radius: 10px;
+    border: none;
 }
 @keyframes INCOME {
     0% {
        opacity: 0;
+       scale: 0;
+       transform: translateY(73px);
     }
-    73% {
+    50% {
         opacity: 0;
+        scale: .9;
+        transform: translateY(73px);
+    }
+    80% {
+        opacity: .73;
+        scale: .9;
+        transform: translateY(37px);
     }
     100% {
         opacity: 1;
+        scale: 1;
+        transform: translateY(0px);
     }
 }
