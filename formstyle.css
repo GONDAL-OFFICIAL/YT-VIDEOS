@@ -87,8 +87,8 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
-    width: 400px;
-    height: 600px;
+    width: 430px;
+    height: 700px;
     background: repeating-conic-gradient(from var(--a), #ff2770 0%,
     #ff2770 5%, transparent 5%, transparent 40%, #ff2770 50%);
     animation: animate 4s linear infinite;
@@ -128,8 +128,18 @@ border: 8px solid #25252b;
 }
 
 #CONTAINER {
-    width: 300px;
+    width: 350px;
     z-index: 3;
+    height: 600px;
+    margin-top: 73px;
+}
+#CONTAINER::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+#CONTAINER::-webkit-scrollbar-thumb {
+    background: linear-gradient(lightblue, lime, lightblue);
+    border-radius: 20px;
 }
 .FORM {
     position: relative;
@@ -146,7 +156,7 @@ input {
     padding: 0 37px;
     line-height: 37px;
     border-radius: 10px;
-    border: 2px solid gray;
+    border: 3px solid gray;
     background: transparent;
     transition: .1s ease;
     z-index: 7;
@@ -230,9 +240,122 @@ input:valid + .LABELLINE {
     transform: translate(-15px, -16px) scale(0.88);
     z-index: 7;
 }
+/* INPUT TYPE RADIO */
+#GENDER {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px 0px 20px;
+}
 
+#GENDER #GI {
+    position: relative;
+    padding: 10px 35px 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 7px;
+}
+
+#GENDER #GI #IG {
+    appearance: none;
+}
+
+#GENDER #GI i {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#GENDER #GI i::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #999;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+#GENDER #GI i::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #999;
+    transform: rotate(315deg);
+    transition: .5s;
+}
+
+#GENDER #GI #IG:checked ~ i::before {
+    width: 50%;
+    transform: rotate(45deg) translate(-4px, 9px);
+}
+
+#GENDER #GI #IG:checked ~ i::before,
+#GENDER #GI #IG:checked ~ i::after {
+    background: #333;
+}
+
+#GENDER #GI #SG {
+    color: #999;
+    transition: .5s;
+    font-size: 1.2em;
+    color: #f0ffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#GENDER #GI #SG::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid gray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: .5;
+    z-index: -1;
+}
+
+#GENDER #GI:hover #SG::before {
+    border: 3px solid var(--clr);
+}
+
+#GENDER #GI #IG:checked ~ #SG::before {
+    background: var(--clr);
+    border: 3px solid var(--clr);
+    box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
+
+#GENDER #GI #IG:checked ~ #SG {
+    color: #333;
+}
+
+#IG {
+    background: none;
+    border: none;
+    height: 15px;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
 #CONTAINER {
     animation: INCOME .75s ease-in-out 0s 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
 }
 @keyframes INCOME {
     0% {
